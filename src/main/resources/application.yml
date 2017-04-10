@@ -1,0 +1,15 @@
+server:
+  port: 8090
+  context-path: /demo
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot
+    username: root
+    password: 123456789
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
